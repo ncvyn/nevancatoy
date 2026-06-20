@@ -3,6 +3,11 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Home">
+  <div
+    id="transition-overlay"
+    class="z-50 inset-0 fixed bg-light-bg dark:bg-dark-bg opacity-0 transition-opacity duration-500 pointer-events-none"
+  >
+  </div>
   <div class="flex flex-col h-screen w-screen items-center justify-center">
     <p class="text-center text-6xl font-bold leading-tight">
       Nevan Angelo Catoy
@@ -21,4 +26,5 @@ import Layout from '../layouts/Layout.astro'
       >
     </div>
   </div>
+  <script src="../scripts/pageTransition.ts"></script>
 </Layout>
