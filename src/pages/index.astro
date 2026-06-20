@@ -3,9 +3,16 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Home">
-  <div class="flex h-screen w-screen items-center justify-center">
-    <p class="text-center text-8xl font-bold leading-tight">
+  <div class="flex flex-col h-screen w-screen items-center justify-center">
+    <p class="text-center text-6xl font-bold leading-tight">
       Nevan Angelo Catoy
     </p>
+    <div
+      class="flex flex-col gap-4 mt-8 items-center text-2xl decoration-transparent hover:underline visited:text-light-fg dark:visited:text-dark-fg"
+    >
+      <a href="/about">[ About Me ]</a>
+      <a href="/projects">[ Projects ]</a>
+      <a href="/contact">[ Contact ]</a>
+    </div>
   </div>
 </Layout>
