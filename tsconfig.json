@@ -5,5 +5,8 @@
   "compilerOptions": {
     "moduleResolution": "nodenext",
     "module": "NodeNext",
+    "paths": {
+      "@/*": ["./*"],
+    },
   },
 }
