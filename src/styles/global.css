@@ -1,1 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@theme inline {
+  --font-mono: var(--font-maple-mono);
+}
+
+@theme {
+  --color-*: initial;
+  --color-light-bg: #fff;
+  --color-light-fg: #000;
+  --color-dark-bg: oklch(14.5% 0 0); /* color-neutral-950 */
+  --color-dark-fg: oklch(92.2% 0 0); /* color-neutral-200 */
+  --color-orange-300: oklch(83.7% 0.128 66.29);
+  --color-orange-900: oklch(40.8% 0.123 38.172);
+}
