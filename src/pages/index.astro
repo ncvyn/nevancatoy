@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import IndexLink from '../components/IndexLink.astro'
 ---
 
 <Layout title="Home">
@@ -10,15 +11,9 @@ import Layout from '../layouts/Layout.astro'
     <div
       class="flex flex-col gap-4 mt-8 items-center text-2xl decoration-transparent hover:underline visited:text-light-fg dark:visited:text-dark-fg"
     >
-      <a class="hover:backdrop-invert-25 hover:invert" href="/about"
-        >[ About Me ]</a
-      >
-      <a class="hover:backdrop-invert-25 hover:invert" href="/projects"
-        >[ Projects ]</a
-      >
-      <a class="hover:backdrop-invert-25 hover:invert" href="/contact"
-        >[ Contact ]</a
-      >
+      <IndexLink href="/about" text="About Me" />
+      <IndexLink href="/projects" text="Projects" />
+      <IndexLink href="/contact" text="Contact" />
     </div>
   </div>
 </Layout>
