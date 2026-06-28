@@ -1,11 +1,19 @@
 {
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "include": [
+    ".astro/types.d.ts",
+    "**/*",
+    "./worker-configuration.d.ts"
+  ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
     "moduleResolution": "nodenext",
     "module": "NodeNext",
     "paths": {
-      "@/*": ["./*"],
-    },
-  },
+      "@/*": [
+        "./*"
+      ]
+    }
+  }
 }
