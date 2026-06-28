@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Home">
+  <div class="flex flex-col h-[80vh] w-[80vw] m-auto">
+    <p
+      class="flex-none flex items-center justify-center text-center text-6xl font-bold leading-tight"
+    >
+      About Me
+    </p>
+    <button class="flex-none btn btn-ghost text-xl"> Go Back </button>
+    <p class="flex-1 text-2xl flex items-center justify-center text-center">
+      Hello! <br />I'm Nevan Angelo Catoy, a 17-year-old Computer Engineering
+      student.
+    </p>
+  </div>
+  <script>
+    import { navigate } from 'astro:transitions/client'
+    document.addEventListener('astro:page-load', () => {
+      document.querySelector('button')?.addEventListener('click', () => {
+        if (window.history.length > 2) {
+          window.history.back()
+        } else {
+          navigate('/')
+        }
+      })
+    })
+  </script>
+</Layout>
