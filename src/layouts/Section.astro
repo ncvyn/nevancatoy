@@ -14,7 +14,13 @@ const { title } = Astro.props
     >
       {title}
     </p>
-    <button class="flex-none btn btn-ghost text-xl"> Go Back </button>
+    <button
+      class="flex-none text-xl pt-2.5
+      decoration-wavy decoration-orange-200 underline-offset-2
+      hover:underline hover:font-bold hover:cursor-pointer w-fit m-auto"
+    >
+      ⮌ Home
+    </button>
     <div class="flex-1 text-2xl flex items-center justify-center text-center">
       <slot />
     </div>
