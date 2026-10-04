@@ -10,6 +10,8 @@ const { href, text } = Astro.props
   class="bg-white dark:bg-black
   hover:bg-black dark:hover:bg-white
   hover:text-white dark:hover:text-black
-  transition-colors motion-reduce:transition-none motion-reduce:hover:transform-none duration-500"
+  focus:animate-flicker motion-reduce:transition-none motion-reduce:hover:transform-none motion-reduce:focus:animation-none"
   href={href}
->{`[ ${text} ]`}</a>
+>
+  {text}
+</a>

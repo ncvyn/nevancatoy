@@ -2,7 +2,6 @@
 import '@/styles/global.css'
 import { Font } from 'astro:assets'
 import { ClientRouter } from 'astro:transitions'
-import { slide } from 'astro:transitions'
 
 interface Props {
   title: string
@@ -21,10 +20,8 @@ const { title } = Astro.props
     <ClientRouter />
     <title>{title}</title>
   </head>
-  <body
-    class="bg-white dark:bg-black"
-    transition:animate={slide({ duration: '0.5s' })}
-  >
+  <body class="bg-white dark:bg-black" transition:animate="none">
+    <div class="animate-page-flicker w-[200vw] h-[200vh] fixed top-0 left-0 z-99 pointer-events-none bg-white dark:bg-black"></div>
     <div
       class="text-black dark:text-white
       selection:bg-orange-800 selection:text-orange-200
