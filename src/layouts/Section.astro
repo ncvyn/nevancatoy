@@ -1,5 +1,5 @@
 ---
-import Layout from './Layout.astro'
+import Layout from '@/layouts/Layout.astro'
 
 interface Props {
   title: string
@@ -9,9 +9,7 @@ const { title } = Astro.props
 
 <Layout title={title}>
   <div class="flex flex-col h-[80vh] w-[80vw] m-auto">
-    <p
-      class="flex-none flex items-center justify-center text-center text-6xl font-bold leading-tight"
-    >
+    <p class="flex-none flex items-center justify-center text-center text-6xl font-bold leading-tight">
       {title}
     </p>
     <button
