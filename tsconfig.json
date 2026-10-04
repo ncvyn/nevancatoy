@@ -2,10 +2,25 @@
   "include": [".astro/types.d.ts", "**/*"],
   "exclude": ["dist"],
   "compilerOptions": {
+    "strict": true,
     "moduleResolution": "nodenext",
     "module": "NodeNext",
+
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./src/*"],
     },
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+
+    "noUncheckedIndexedAccess": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "erasableSyntaxOnly": true,
+
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
   },
 }
